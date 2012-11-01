@@ -12,6 +12,6 @@
     "jasmine-node": "1.x"
   },
   "scripts": {
-    "test": "jasmine-node --color --coffee spec"
+    "test": "jasmine-node --color --coffee --autotest spec"
   }
 }
