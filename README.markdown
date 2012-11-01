@@ -1,6 +1,6 @@
 # What is protoo
 
-A new Personal Publishing Platform that gives the user the most options to publish common types of media without being in the way - needing no backend to add end edit content. It has maximum amount of flexibility in the creation, combination and display of content. To achieve these goals it uses state of the art [html5](http://www.html5rocks.com) and [css3](http://www.w3schools.com/css3) technology and [nodejs](http://nodejs.org) asynchronous programming with the shemeless database [mongoDB](http://www.mongodb.org).
+A new Personal Publishing Platform that gives the user the most options to publish common types of media without being in the way - needing no backend to add and edit content. It has maximum amount of flexibility in the creation, combination and display of content. To achieve these goals it uses state of the art [html5](http://www.html5rocks.com) and [css3](http://www.w3schools.com/css3) technology and [nodejs](http://nodejs.org) asynchronous programming with the shemeless database [mongoDB](http://www.mongodb.org).
 
 
 ## Modules
