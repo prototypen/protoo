@@ -5,7 +5,7 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
-  , lessMiddleware = require('less-middleware');
+  , stylus = require('stylus');
 
 var app = express();
 
@@ -21,9 +21,13 @@ app.configure(function(){
   app.use(express.cookieParser('YOUR SECRET HERE'));
   app.use(express.session());
   app.use(app.router);
-  app.use(lessMiddleware({
-    src      : __dirname + "/public",
-    compress : true
+  app.use(stylus.middleware({
+    src: __dirname + '/public',
+    compile: function(str, path) {
+      return stylus(str)
+        .set('filename', path)
+        .set('compress', true);
+    }
   }));
   app.use(express.static(path.join(__dirname, 'public')));
 });
