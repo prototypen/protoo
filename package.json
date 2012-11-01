@@ -1,0 +1,17 @@
+{
+  "name": "protoo",
+  "description": "A new Personal Publishing Platform that gives the user the most options to publish common types of media without being in the way.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "jade": "*",
+    "less-middleware": "*",
+    "coffee-script": "1.4.x",
+    "request": "2.11.x",
+    "jasmine-node": "1.x"
+  },
+  "scripts": {
+    "test": "jasmine-node --color --coffee spec"
+  }
+}
