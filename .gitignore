@@ -31,3 +31,6 @@ $RECYCLE.BIN/
 
 # Node Modules
 node_modules/
+
+# compiles css file
+/public/stylesheets/style.css
