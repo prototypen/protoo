@@ -28,3 +28,6 @@ Desktop.ini
 
 # Windows recycle Bin used on file shares
 $RECYCLE.BIN/
+
+# Node Modules
+node_modules/
