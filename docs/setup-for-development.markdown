@@ -2,7 +2,7 @@
 
 ## Install requirements
 
-*I assume you have [node.js](http://nodejs.org) with a least version 0.8.14 installed.*
+*I assume you have [node.js](http://nodejs.org) with at least version 0.8.14 installed.*
 
 Install all the needed dependencies locally using ```npm install```.
 
