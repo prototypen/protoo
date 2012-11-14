@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "3.x",
+    "express": "~3.0.3",
     "jade": "*",
     "stylus": "0.30.x",
     "coffee-script": "1.4.x",
@@ -12,6 +12,8 @@
     "jasmine-node": "1.x"
   },
   "scripts": {
-    "test": "jasmine-node --color --coffee --autotest spec"
+    "start": "node app.js",
+    "test": "jasmine-node --color --coffee spec",
+    "autotest": "jasmine-node --color --coffee --autotest spec"
   }
 }

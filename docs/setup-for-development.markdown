@@ -12,6 +12,8 @@ Start the server unsing ```npm start``` or ```node server```. Now you can visit 
 
 ## Run the tests
 
-*Make sure you have the server running for testing (will be fixed in the future).*
+Use ```npm test``` to run [jasmine-node](https://github.com/mhevery/jasmine-node) with some predefined options once to see if everything is fine.
 
-Use ```npm test``` to run [jasmine-node](https://github.com/mhevery/jasmine-node) with some predefined options or use ```jasmine-node --help``` to see what you can do with it manually.
+If you want to run the test automatically while you're coding you can use ```npm run-script autotest```.
+
+*You could also use ```jasmine-node --help``` to see what you can do with it manually.*

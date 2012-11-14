@@ -39,7 +39,17 @@ app.configure('development', function(){
 /****************************** Routes */
 app.get('/', routes.index);
 
-/****************************** Create Server */
-http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
-});
+/****************************** Start Server */
+exports.start = function( config, readyCallback ) {
+  this.server = app.listen( config.port, function() {
+    // TODO: Get rid of the server output while testing
+    if (app.settings.env != 'test') {
+      console.log('Server running on port %d in %s mode', config.port, app.settings.env);
+    }
+  });
+};
+
+/****************************** Stop Server */
+exports.stop = function() {
+  this.server.close();
+};
