@@ -57,5 +57,6 @@ exports.start = function( config, readyCallback ) {
 
 /****************************** Stop Server */
 exports.stop = function() {
+  mongoose.disconnect();
   this.server.close();
 };
