@@ -15,7 +15,9 @@ app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
-  app.use(express.logger('dev'));
+  if (app.settings.env == 'development') {
+    app.use(express.logger('dev'));
+  }
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(express.cookieParser('YOUR SECRET HERE'));
@@ -42,7 +44,6 @@ app.get('/', routes.index);
 /****************************** Start Server */
 exports.start = function( config, readyCallback ) {
   this.server = app.listen( config.port, function() {
-    // TODO: Get rid of the server output while testing
     if (app.settings.env != 'test') {
       console.log('Server running on port %d in %s mode', config.port, app.settings.env);
     }
