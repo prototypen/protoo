@@ -9,7 +9,9 @@
     "stylus": "0.30.x",
     "coffee-script": "1.4.x",
     "request": "2.11.x",
-    "jasmine-node": "1.x"
+    "jasmine-node": "1.x",
+    "async": "0.1.x",
+    "mongoose": "3.4.x"
   },
   "scripts": {
     "start": "node app.js",

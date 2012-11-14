@@ -5,9 +5,14 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
-  , stylus = require('stylus');
+  , stylus = require('stylus')
+  , async = require('async')
+  , mongoose = require('mongoose');
 
 var app = express();
+
+/****************************** Database */
+mongoose.connect('mongodb://localhost/protoo');
 
 /****************************** App configuration */
 app.configure(function(){

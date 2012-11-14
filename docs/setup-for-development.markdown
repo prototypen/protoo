@@ -8,9 +8,13 @@ Install all the needed dependencies locally using ```npm install```.
 
 ## Run the server
 
+*Make sure you have mongoDB up and running. TODO: Automate soon.*
+
 Start the server unsing ```npm start``` or ```node server```. Now you can visit [localhost:3000](http://localhost:3000).
 
 ## Run the tests
+
+*Make sure you have mongoDB up and running. TODO: Automate soon.*
 
 Use ```npm test``` to run [jasmine-node](https://github.com/mhevery/jasmine-node) with some predefined options once to see if everything is fine.
 
