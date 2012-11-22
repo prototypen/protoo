@@ -25,12 +25,12 @@ app.configure(function(){
   }
   app.use(express.bodyParser());
   app.use(express.methodOverride());
-  app.use(express.cookieParser('YOUR SECRET HERE'));
+  app.use(express.cookieParser('There are no secrets its all lies'));
   app.use(express.session());
   app.use(app.router);
   app.use(stylus.middleware({
     src: __dirname + '/public',
-    compile: function(str, path) {
+    compile: function(str, path){
       return stylus(str)
         .set('filename', path)
         .set('compress', true);
@@ -44,7 +44,9 @@ app.configure('development', function(){
 });
 
 /****************************** Routes */
-app.get('/', routes.index);
+app.get('/yyy', routes.index);
+app.get('/xxx', routes.firstrun);
+
 
 /****************************** Start Server */
 exports.start = function( config, readyCallback ) {
