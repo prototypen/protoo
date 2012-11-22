@@ -19,4 +19,4 @@ Protoo relies solely on tagging to organize the content which gives unlimited po
 
 ## Does it build?
 
-Build Status from [travis-ci.org](https://travis-ci.org): [![Build Status](https://secure.travis-ci.org/prototypen/protoo.png?branch=master)](https://secure.travis-ci.org/prototypen/protoo.png?branch=master)
+Build Status from [travis-ci.org](https://travis-ci.org): [![Build Status](https://secure.travis-ci.org/prototypen/protoo.png?branch=master)](https://secure.travis-ci.org/prototypen/protoo)
