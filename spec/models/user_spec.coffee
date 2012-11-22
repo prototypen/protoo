@@ -3,13 +3,16 @@ User = require '../../models/user'
 
 describe 'User', ->
   beforeEach ->
+    # Connect to the test database before each test
     mongoose.connect('mongodb://localhost/protoo-test')
 
+    # Generate fake user
     @user = new User
       username: 'testuser'
       password: 'testpassword'
 
   afterEach ->
+    # Disconnect from the test database after each test
     mongoose.disconnect()
 
   it 'should be saveable', ->
@@ -26,4 +29,3 @@ describe 'User', ->
         doc.remove (err, doc) ->
           jasmine.asyncSpecDone()
     jasmine.asyncSpecWait()
-
