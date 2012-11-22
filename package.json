@@ -11,7 +11,9 @@
     "request": "2.11.x",
     "jasmine-node": "1.x",
     "async": "0.1.x",
-    "mongoose": "3.4.x"
+    "mongoose": "3.4.x",
+    // TODO: Change to master branch if fixed
+    "everyauth": "git://github.com/bnoguchi/everyauth.git#express3"
   },
   "scripts": {
     "start": "node app.js",
