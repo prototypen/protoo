@@ -12,7 +12,9 @@
     "jasmine-node": "1.x",
     "async": "0.1.x",
     "mongoose": "3.4.x",
-    "supervisor": "0.5.x"
+    "supervisor": "0.5.x",
+    "everyauth": "git://github.com/bnoguchi/everyauth.git#express3",
+    "bcrypt": "0.7.x"
   },
   "scripts": {
     "start": "supervisor -e 'js|coffee|jade|styl' app.js",
