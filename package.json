@@ -11,10 +11,11 @@
     "request": "2.11.x",
     "jasmine-node": "1.x",
     "async": "0.1.x",
-    "mongoose": "3.4.x"
+    "mongoose": "3.4.x",
+    "supervisor": "0.5.x"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "supervisor -e 'js|coffee|jade|styl' app.js",
     "test": "jasmine-node --color --coffee spec",
     "autotest": "jasmine-node --color --coffee --autotest spec"
   }
