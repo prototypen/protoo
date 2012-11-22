@@ -4,7 +4,14 @@ A new Personal Publishing Platform that gives the user the most options to publi
 
 ## Modules
 
-To allow for a maximum flexibility protoo uses a module system - so called protons - to add unlimited amount of functionality. The Module API is very easy to understand (function and views).
+To allow for a maximum flexibility protoo uses a module system - so called quarks - to add unlimited amount of functionality. Quarks live in viewable on the fly created containers called protons. 
+The Module API is very easy to understand (function and views).
+
+
+## Tagging
+
+Protoo relies solely on tagging to organize the content which gives unlimited power to organize and display it in different ways without having to rely on prebuild structures. 
+
 
 
 ## Rip Mix Remix
@@ -12,9 +19,9 @@ To allow for a maximum flexibility protoo uses a module system - so called proto
 Protoo is also exposing all data so that different instances of protoo (and other apps) can easily reuse the content. All shared content has metadata embedded that also includes the original author and the license used to publish the content.
 
 
-## Tagging
+## Wiki
 
-Protoo relies solely on tagging to organize the content which gives unlimited power to organize and display it in different ways.
+For the moment the official Wiki and further documentation can be found at the development wiki: https://intern.prototypen.com/wiki/projects/protoo1/protoo.html
 
 
 ## Does it build?
