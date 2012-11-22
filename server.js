@@ -53,7 +53,7 @@ exports.start = function( config, readyCallback ) {
 
     /****************************** Connect to Database */
     if (app.settings.env == 'test') {
-      mongoose.connect('mongodb://localhost/protoo_test');
+      mongoose.connect('mongodb://localhost/protoo-test');
     } else {
       mongoose.connect('mongodb://localhost/protoo');
     }
