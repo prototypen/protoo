@@ -44,8 +44,8 @@ app.configure('development', function(){
 });
 
 /****************************** Routes */
-app.get('/yyy', routes.index);
-app.get('/xxx', routes.firstrun);
+app.get('/', routes.index);
+app.get('/firstrun', routes.firstrun);
 
 
 /****************************** Start Server */
