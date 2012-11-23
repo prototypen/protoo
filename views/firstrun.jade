@@ -6,21 +6,20 @@ append styles
 
 block content
 	h1= innerTitle
-	
+
 	p
 		| this is the first time you have started this site <br />
 		| please login with your default admin credentials <br />
-		| to initialise your protoo 
+		| to initialise your protoo
 
 	form(name="input", action="/", method="get")
-		p 
+		p
+
 			| Username: <br />
 			input(type="text", name="user", value="higgs")
 
-		p 
+		p
 			|Password: <br />
 			input(type="text", name="pswd")
 
 		input(class="button", type="submit", value="Submit")
-		
-
