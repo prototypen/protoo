@@ -16,5 +16,5 @@ describe "Server", ->
 
   it "has the correct body", (done) ->
     request "http://localhost:3001", (error, response, body) ->
-      expect(body).toContain "Welcome to protoo"
+      expect(body).toContain "Welcome to Protoo"
       done()
