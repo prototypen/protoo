@@ -1,3 +1,6 @@
+i18n = require 'i18n'
+
+
 # GET home page.
 indexPageTitle = "Protoo"
 firstrunPageTitle = "proto init"

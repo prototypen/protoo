@@ -8,9 +8,12 @@ var express = require('express')
   , stylus = require('stylus')
   , async = require('async')
   , mongoose = require('mongoose')
-  , everyauth = require('everyauth');
+  , everyauth = require('everyauth')
+  , i18n = require('i18next');
 
 var app = express();
+
+i18n.init();
 
 /****************************** App configuration */
 app.configure(function(){
@@ -34,6 +37,7 @@ app.configure(function(){
         .set('compress', true);
     }
   }));
+  app.use(i18n.handle);
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
 });
@@ -42,10 +46,19 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+
+/*** i18n Language setups - Routes to ignore **********/
+
+i18n.init({
+  ignoreRoutes: ['images/', 'public/', 'css/', 'js/']
+});
+
 /****************************** Routes */
+/*
 app.get('/', routes.index);
 app.get('/firstrun', routes.firstrun);
 app.get('/login', routes.login);
+*/
 
 
 /****************************** Start Server */
