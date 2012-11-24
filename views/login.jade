@@ -1,0 +1,24 @@
+extends layout
+
+append styles
+	link(rel='stylesheet', href='/stylesheets/init.css')
+
+
+block content
+	h1= innerTitle
+
+	p
+		| Hello friend nice to see you back <br />
+		| please login with your name and password <br />
+
+	form(name="input", action="/", method="get")
+		p
+
+			| Username: <br />
+			input(type="text", name="user")
+
+		p
+			|Password: <br />
+			input(type="text", name="pswd")
+
+		input(class="button", type="submit", value="Submit")

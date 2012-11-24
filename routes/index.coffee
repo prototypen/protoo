@@ -1,10 +1,24 @@
 # GET home page.
+indexPageTitle = "Protoo"
+firstrunPageTitle = "proto init"
+firstRunInlineTite = "one small step for you one big step for your protoo"
+loginPageTitle = "login"
+loginlineTite = "Welcome Back Friend!"
+	
+
 exports.index = (req, res) ->
   res.render "index",
-    title: "protoo"
+    title: indexPageTitle
 
 # GET firstrun page.
 exports.firstrun = (req, res) ->
   res.render "firstrun",
-    title: "protoo init",
-    innerTitle: "one small step for you one big step for your protoo"
+    title: firstRunPageTitle,
+    innerTitle: firstRunInlineTite
+    
+    
+# GET login page.
+exports.login = (req, res) ->
+  res.render "login",
+    title: loginPageTitle,
+    innerTitle: loginlineTite
