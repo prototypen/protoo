@@ -1,8 +1,11 @@
-i18n = require 'i18n'
+i18n = require 'i18next'
+
+i18n.init  lng: "en-US", resGetPath: './locales/__lng__/interface.json'
 
 
 # GET home page.
-indexPageTitle = "Protoo"
+indexPageTitle = i18n.t("login.indexPageTitle")
+
 firstrunPageTitle = "proto init"
 firstRunInlineTite = "one small step for you one big step for your protoo"
 loginPageTitle = "login"

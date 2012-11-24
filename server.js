@@ -13,10 +13,6 @@ var express = require('express')
 
 var app = express();
 
-/*** initialise i18n **********************************/
-
-i18n.init();
-
 /****************************** App configuration */
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
