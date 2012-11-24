@@ -13,6 +13,8 @@ var express = require('express')
 
 var app = express();
 
+/*** initialise i18n **********************************/
+
 i18n.init();
 
 /****************************** App configuration */
@@ -54,11 +56,9 @@ i18n.init({
 });
 
 /****************************** Routes */
-/*
 app.get('/', routes.index);
 app.get('/firstrun', routes.firstrun);
 app.get('/login', routes.login);
-*/
 
 
 /****************************** Start Server */
