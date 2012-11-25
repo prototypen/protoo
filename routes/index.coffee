@@ -2,9 +2,11 @@ i18n = require 'i18next'
 
 i18n.init lng: "en-US", ns: "interfaces", resGetPath: 'locales/en-US/interfaces.json', debug: true
 console.log  i18n.lng
-console.log i18n.t 'ns.interfaxes:app.name'
+console.log "test" + i18n.t 'interfaces:app.name'
+
+
 # GET home page.
-indexPageTitle = i18n.t "interfaces.login.indexPageTitle"
+indexPageTitle = "protoo"
 
 firstrunPageTitle = "proto init"
 firstRunInlineTite = "one small step for you one big step for your protoo"
