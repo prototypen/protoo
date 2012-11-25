@@ -1,7 +1,8 @@
 i18n = require 'i18next'
-i18n.init lng: "en-US", ns: "interfaces", resGetPath: 'locales/__lng__/__ns__.json'
 
-
+i18n.init lng: "en-US", ns: "interfaces", resGetPath: 'locales/en-US/interfaces.json', debug: true
+console.log  i18n.lng
+console.log i18n.t 'ns.interfaxes:app.name'
 # GET home page.
 indexPageTitle = i18n.t "interfaces.login.indexPageTitle"
 

@@ -47,9 +47,11 @@ app.configure('development', function(){
 
 /*** i18n Language setups - Routes to ignore **********/
 
+/*
 i18n.init({
   ignoreRoutes: ['images/', 'public/', 'css/', 'js/']
 });
+*/
 
 /****************************** Routes */
 app.get('/', routes.index);

@@ -1,5 +1,5 @@
 {
-  "login": {
-    "indexPageTitle": "Protoose"
+  "app": {
+    "name": "i18next"
   }
 }
