@@ -1,5 +1,6 @@
 {
-  "app": {
-    "name": "i18next"
-  }
+    "test": {
+        "name": "i18n"
+
+    }
 }
