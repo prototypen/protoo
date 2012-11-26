@@ -46,8 +46,8 @@ app.configure('development', function(){
 
 
 /*** i18n Language & Path Setups  **********/
-
-i18n.init({ lng: "en-US", ns: "interfaces", resGetPath: 'locales/en-US/interfaces.json', debug: true});
+var i18n_debug = app.settings.env === 'development' ? true : false;
+i18n.init({ lng: "en-US", ns: "interfaces", resGetPath: 'locales/en-US/interfaces.json', debug: i18n_debug});
 i18n.registerAppHelper(app);
 
 
