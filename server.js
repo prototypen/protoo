@@ -45,13 +45,11 @@ app.configure('development', function(){
 });
 
 
-/*** i18n Language setups - Routes to ignore **********/
+/*** i18n Language & Path Setups  **********/
 
-/*
-i18n.init({
-  ignoreRoutes: ['images/', 'public/', 'css/', 'js/']
-});
-*/
+i18n.init({ lng: "en-US", ns: "interfaces", resGetPath: 'locales/en-US/interfaces.json', debug: true});
+i18n.registerAppHelper(app);
+
 
 /****************************** Routes */
 app.get('/', routes.index);
