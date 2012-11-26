@@ -49,7 +49,9 @@ app.configure('development', function(){
 var i18n_debug = app.settings.env === 'development' ? true : false;
 i18n.init({ lng: "en-US", ns: "interfaces", resGetPath: 'locales/en-US/interfaces.json', debug: i18n_debug});
 i18n.registerAppHelper(app);
-
+i18n.addPostProcessor("jade", function(val, key, opts) {
+   return require("jade").compile(val, opts)();
+});
 
 /****************************** Routes */
 app.get('/', routes.index);

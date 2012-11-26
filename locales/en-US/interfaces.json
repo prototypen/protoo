@@ -1,6 +1,30 @@
 {
-    "index": {
-        "pageTitle": "Protoo"
 
-    }
+	"forms":
+	{
+		"userName": "Username",
+		"passWord": "Password",
+		"submitButton": "Submit"
+	},
+    "index": 
+    {
+        "pageWelcome": "Welcome to"
+        
+    },
+    
+    "firstRun": 
+    {
+    	"pageTitle": "init",
+    	"inlineTitle": "One Small Step for You One Big Step for Your",
+    	"inlineExplanation_One": "This is the first time you have started this site.",
+    	"inlineExplanation_Two": "Please login with your default admin credentials to initialise"
+    },
+    
+	"login": 
+	{
+		"title": "login",
+		"inlineTitle": "Welcome Back!",
+		"inlineExplanation_One": "Hello friend, nice to see you back.",
+		"inlineExplanation_Two": "Please login with your name and password."
+	}
 }

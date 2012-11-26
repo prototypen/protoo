@@ -1,5 +1,9 @@
 extends layout
 
+append title
+	#{protooName}
+
+
 block content
-  h1= t(title)
-  p Welcome to #{t(title)}
+	h1= protooName
+	p #{t("index.pageWelcome")} #{protooName}

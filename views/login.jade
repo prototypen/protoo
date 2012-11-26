@@ -1,24 +1,28 @@
 extends layout
 
+append title
+	title #{protooName} | #{t('login.title')}
+
 append styles
 	link(rel='stylesheet', href='/stylesheets/init.css')
 
 
 block content
-	h1= innerTitle
-
+	h1 #{t("login.inlineTitle")}
+	
 	p
-		| Hello friend nice to see you back <br />
-		| please login with your name and password <br />
+		| #{t("login.inlineExplanation_One")} <br />
+		| #{t("login.inlineExplanation_Two")} <br />
 
 	form(name="input", action="/", method="get")
-		p
-
-			| Username: <br />
+		label
+			| #{t("forms.userName")}: 
 			input(type="text", name="user")
+			<br />
 
-		p
-			|Password: <br />
+		label
+			| #{t("forms.passWord")}:  
 			input(type="text", name="pswd")
-
-		input(class="button", type="submit", value="Submit")
+			<br />
+			
+		input(class="button", type="submit", value=t("forms.submitButton"))

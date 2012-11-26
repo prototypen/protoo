@@ -1,25 +1,30 @@
 extends layout
 
+append title
+	title #{protooName} | #{t('firstRun.pageTitle')}
+
 append styles
 	link(rel='stylesheet', href='/stylesheets/init.css')
 
 
 block content
-	h1= innerTitle
-
-	p
-		| this is the first time you have started this site <br />
-		| please login with your default admin credentials <br />
-		| to initialise your protoo
+	h1 #{t("firstRun.inlineTitle")} #{protooName}
+	
+	
+	p	
+		| #{t("firstRun.inlineExplanation_One")} <br /> 
+		| #{t("firstRun.inlineExplanation_Two")} #{protooName}.
 
 	form(name="input", action="/", method="get")
-		p
+		label
 
-			| Username: <br />
-			input(type="text", name="user", value="higgs")
-
-		p
-			|Password: <br />
-			input(type="text", name="pswd")
-
-		input(class="button", type="submit", value="Submit")
+			| #{t("forms.userName")}: 
+			input(type="text", name="user", value="higgs") <br />
+			<br />
+		label
+			| #{t("forms.passWord")}: 
+			input(type="text", name="pswd") <br />
+			<br />
+			<br />
+			
+		input(class="button", type="submit", value=t("forms.submitButton"))
