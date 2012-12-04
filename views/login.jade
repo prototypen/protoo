@@ -1,10 +1,10 @@
-extends layout
+extends ./layout
 
 append title
 	title #{protooName} | #{t('login.title')}
 
 append styles
-	link(rel='stylesheet', href='/stylesheets/init.css')
+	link(rel='stylesheet', href='/stylesheets/login.css')
 
 
 block content
@@ -13,16 +13,8 @@ block content
 	p
 		| #{t("login.inlineExplanation_One")} <br />
 		| #{t("login.inlineExplanation_Two")} <br />
+		
 
-	form(name="input", action="/", method="get")
-		label
-			| #{t("forms.userName")}: 
-			input(type="text", name="user")
-			<br />
-
-		label
-			| #{t("forms.passWord")}:  
-			input(type="text", name="pswd")
-			<br />
+	include mixins/formHelpers
+	+loginForm ("input", "/")
 			
-		input(class="button", type="submit", value=t("forms.submitButton"))

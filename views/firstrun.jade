@@ -4,27 +4,17 @@ append title
 	title #{protooName} | #{t('firstRun.pageTitle')}
 
 append styles
-	link(rel='stylesheet', href='/stylesheets/init.css')
+	link(rel='stylesheet', href='/stylesheets/login.css')
 
 
 block content
-	h1 #{t("firstRun.inlineTitle")} #{protooName}
-	
-	
-	p	
-		| #{t("firstRun.inlineExplanation_One")} <br /> 
-		| #{t("firstRun.inlineExplanation_Two")} #{protooName}.
-
-	form(name="input", action="/", method="get")
-		label
-
-			| #{t("forms.userName")}: 
-			input(type="text", name="user", value="higgs") <br />
-			<br />
-		label
-			| #{t("forms.passWord")}: 
-			input(type="text", name="pswd") <br />
-			<br />
-			<br />
+	#loginText
+		h1 #{t("firstRun.inlineTitle")} #{protooName}
 			
-		input(class="button", type="submit", value=t("forms.submitButton"))
+		p	
+			| #{t("firstRun.inlineExplanation_One")} <br /> 
+			| #{t("firstRun.inlineExplanation_Two")} #{protooName}.
+
+	include mixins/formHelpers
+	+loginForm ("input", "/")
+			
