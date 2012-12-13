@@ -3,18 +3,20 @@ extends ./layout
 append title
 	title #{protooName} | #{t('login.title')}
 
-append styles
-	link(rel='stylesheet', href='/stylesheets/login.css')
+
+append scripts
+	script(src='/javascripts/loginform.js')
+	script(src='/javascripts/test.js')
 
 
 block content
-	h1 #{t("login.inlineTitle")}
+	#content
+		h1 #{t("login.inlineTitle")}
 	
-	p
-		| #{t("login.inlineExplanation_One")} <br />
-		| #{t("login.inlineExplanation_Two")} <br />
+		p
+			| <i>#{t("login.inlineExplanation_One")}</i> <br />
+			| #{t("login.inlineExplanation_Two")} <br />
 		
-
-	include mixins/formHelpers
-	+loginForm ("input", "/")
+			include mixins/formHelpers
+			+loginForm ("input", "/")
 			

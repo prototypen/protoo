@@ -5,11 +5,14 @@ html
 		block title
 		block styles
 			link(rel='stylesheet', href='/stylesheets/style.css')
-			link(rel='stylesheet', href='/stylesheets/jquery_ui/jquery-ui.css')
+			link(rel='stylesheet', href='/stylesheets/utilitycss/jquery_ui/jquery-ui.css')
+			link(rel='stylesheet', href='/stylesheets/utilitycss/jquery_ui/jquery-ui.custom.css')
 
-		block scripts
-			script(src='/javascripts/jquery.js')
-			script(src='/javascripts/jquery-ui.js')
+
 			
 	body
 		block content
+		block scripts
+			script(src='/javascripts/jquery.js')
+			script(src='/javascripts/jquery-ui.js')
+			//script(src='/javascripts/jquery.animate-enhanced.js')

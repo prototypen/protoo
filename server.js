@@ -6,6 +6,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , stylus = require('stylus')
+  , nib = require('nib')
   , async = require('async')
   , mongoose = require('mongoose')
   , everyauth = require('everyauth')
@@ -32,7 +33,9 @@ app.configure(function(){
     compile: function(str, path){
       return stylus(str)
         .set('filename', path)
-        .set('compress', true);
+        .set('compress', true)
+        .use(nib())
+        .import('nib')
     }
   }));
   app.use(i18n.handle);

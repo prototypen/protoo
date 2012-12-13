@@ -1,13 +1,13 @@
 mixin field(type, name, label)
 	.field(class='field-' + type)
-		input(type=type, name=name, onfocus="if (this.value=='#{name}') this.value = ''", onblur="if (this.value=='') this.value = '#{name}'", value=name)
+		input(type=type, name=name, placeholder=name, autocomplete="off")
 
 
 mixin loginForm(formName, action)
 	#loginForm
-		form(name=formName, action=action, method="get")	
+		form(name=formName, action=action, method="get", autocomplete="off")	
 			mixin field('text', t("forms.userName")) 
-			mixin field('text', t("forms.passWord")) <br />
+			mixin field('password', t("forms.passWord")) <br />
 
 				
 			input(class="button", type="submit", value=t("forms.submitButton"))
