@@ -60,6 +60,7 @@ i18n.addPostProcessor("jade", function(val, key, opts) {
 app.get('/', routes.index);
 app.get('/firstrun', routes.firstrun);
 app.get('/login', routes.login);
+app.get('/videoplayer', routes.videoplayer);
 
 
 /****************************** Start Server */

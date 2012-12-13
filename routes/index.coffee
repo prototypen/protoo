@@ -15,3 +15,8 @@ exports.firstrun = (req, res) ->
 exports.login = (req, res) ->
   res.render "login",
     protooName: protooName
+
+# GET videoplayertest page.
+exports.videoplayer = (req, res) ->
+  res.render "videoplayer",
+    protooName: protooName
