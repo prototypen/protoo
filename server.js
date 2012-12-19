@@ -62,7 +62,6 @@ app.get('/', routes.index);
 app.get('/firstrun', routes.firstrun);
 app.get('/login', routes.login);
 app.get('/about', routes.about);
-app.get('/videoplayer', routes.videoplayer);
 
 /****************************** Start Server */
 exports.start = function( config, readyCallback ) {
