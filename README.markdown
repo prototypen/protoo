@@ -45,4 +45,4 @@ We are currently at the beginning. There are lots of todos:
 
 
 ## Brought to you by
-[fALk Gärtner aka protofALk](https://github.com/protofalk) [Udo Kramer aka optikfluffel](http://udokramer.com/) and hopefully [others](https://github.com/prototypen/protoo/graphs/contributors)
+[fALk GÃ¤rtner aka protofALk](https://github.com/protofalk) [Udo Kramer aka optikfluffel](http://udokramer.com/) and hopefully [others](https://github.com/prototypen/protoo/graphs/contributors)

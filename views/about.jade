@@ -1,9 +1,9 @@
 extends ./layout
 
 append title
-	title #{protooName} | #{t('about.title')}
+	title #{aboutOut} | #{t('about.title')}
 
 block content
-	test= include README.md
-	:markdown= test
+	p
+		!{aboutOut}
 		
