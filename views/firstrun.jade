@@ -12,14 +12,16 @@ append scripts
 
 block content
 	#loginText
-		h1 
-			|#{t("firstRun.inlineTitleOne")} <br /> 
+		h1
+			|#{t("firstRun.inlineTitleOne")}
+			br
 			|#{t("firstRun.inlineTitleTwo")} #{protooName}
-			
-		p	
-			| #{t("firstRun.inlineExplanation_One")} <br /> 
+
+		p
+			| #{t("firstRun.inlineExplanation_One")}
+			br
 			| #{t("firstRun.inlineExplanation_Two")} #{protooName}.
 
 	include mixins/formHelpers
 	+loginForm ("input", "/")
-			
+

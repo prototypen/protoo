@@ -12,11 +12,12 @@ append scripts
 block content
 	#content
 		h1 #{t("login.inlineTitle")}
-	
+
 		p
-			| <i>#{t("login.inlineExplanation_One")}</i> <br />
-			| #{t("login.inlineExplanation_Two")} <br />
-		
+			i #{t("login.inlineExplanation_One")}
+			br
+			| #{t("login.inlineExplanation_Two")}
+
 			include mixins/formHelpers
 			+loginForm ("input", "/")
-			
+

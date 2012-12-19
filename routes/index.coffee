@@ -10,7 +10,7 @@ exports.firstrun = (req, res) ->
   res.render "firstrun",
     protooName: protooName
 
-    
+
 # GET login page.
 exports.login = (req, res) ->
   res.render "login",
