@@ -10,7 +10,8 @@ var express = require('express')
   , async = require('async')
   , mongoose = require('mongoose')
   , everyauth = require('everyauth')
-  , i18n = require('i18next');
+  , i18n = require('i18next')
+  , marked = require('marked');
 
 var app = express();
 
@@ -56,10 +57,27 @@ i18n.addPostProcessor("jade", function(val, key, opts) {
    return require("jade").compile(val, opts)();
 });
 
+/*** markdown options ********************/
+
+marked.setOptions({
+  gfm: true,
+  pedantic: false,
+  sanitize: true,
+  // callback for code highlighter
+  highlight: function(code, lang) {
+    if (lang === 'js') {
+      return javascriptHighlighter(code);
+    }
+    return code;
+  }
+});
+console.log(marked('i am using __markdown__.'));
+
 /****************************** Routes */
 app.get('/', routes.index);
 app.get('/firstrun', routes.firstrun);
 app.get('/login', routes.login);
+app.get('/about', routes.about);
 app.get('/videoplayer', routes.videoplayer);
 
 

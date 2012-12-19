@@ -27,5 +27,10 @@
 		"inlineTitle": "Welcome Back!",
 		"inlineExplanation_One": "Hello friend, nice to see you back.",
 		"inlineExplanation_Two": "Please login with your name and password."
+	},
+	"about":
+	{
+		"title": "About",
+		"markdownfile": "README.markdown"
 	}
 }

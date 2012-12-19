@@ -1,0 +1,9 @@
+extends ./layout
+
+append title
+	title #{protooName} | #{t('about.title')}
+
+block content
+	test= include README.md
+	:markdown= test
+		

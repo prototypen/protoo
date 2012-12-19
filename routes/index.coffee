@@ -16,6 +16,12 @@ exports.login = (req, res) ->
   res.render "login",
     protooName: protooName
 
+# GET about page.
+exports.about = (req, res) ->
+  res.render "about",
+    protooName: protooName
+
+
 # GET videoplayertest page.
 exports.videoplayer = (req, res) ->
   res.render "videoplayer",
