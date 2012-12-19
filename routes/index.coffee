@@ -29,8 +29,3 @@ exports.about = (req, res) ->
 		res.render "about",
 			protooName: protooName
 			aboutOut: marked(String(data))
-
-# GET videoplayertest page.
-#exports.videoplayer = (req, res) ->
-#	res.render "videoplayer",
-#		protooName: protooName
