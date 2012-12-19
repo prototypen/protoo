@@ -7,8 +7,7 @@ mixin loginForm(formName, action)
 	#loginForm
 		form(name=formName, action=action, method="get", autocomplete="off")
 			mixin field('text', t("forms.userName"))
-			mixin field('password', t("forms.passWord")) <br />
-
+			mixin field('password', t("forms.passWord"))
+			br
 
 			input(class="button", type="submit", value=t("forms.submitButton"))
-

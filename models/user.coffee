@@ -24,7 +24,7 @@ UserSchema = new mongoose.Schema(
   # TODO: Add some roles
   # role:
   #   type: String
-  #   enum: ['Administrator', 'Blogger']
+  #   enum: ['Administrator', 'Blogger', 'Commenter']
   #   default: 'Blogger'
 )
 

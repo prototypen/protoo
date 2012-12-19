@@ -19,7 +19,7 @@
     "i18next": "1.5.x"
   },
   "scripts": {
-    "start": "supervisor -e 'js|coffee|jade|styl' app.js",
+    "start": "supervisor -e 'js|coffee|jade|styl|json' app.js",
     "test": "jasmine-node --color --coffee spec",
     "autotest": "jasmine-node --color --coffee --autotest spec"
   }
