@@ -12,8 +12,7 @@ To allow for a maximum flexibility protoo uses a module system - so called quark
 
 ## Tagging
 
-Protoo relies solely on tagging to organize the content which gives unlimited power to organize and display it in different ways without having to rely on prebuild structures. There are two kinds of tags - a content type tag mostly automatically inhereted from the type of quarks used
-
+Protoo relies solely on tagging to organize the content which gives unlimited power to organize and display it in different ways without having to rely on prebuild structures. There are two kinds of tags - a content type tag mostly automatically inhereted from the type of quarks used and semantic content tags that is user generated (so we are looking into way to also automate that to a degree). 
 
 ## Rip Mix Remix
 
