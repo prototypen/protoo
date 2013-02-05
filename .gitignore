@@ -1,5 +1,6 @@
 # SublimeText files
 *.sublime-workspace
+*.sublime-project
 
 # TextMate files
 *.tmproj
