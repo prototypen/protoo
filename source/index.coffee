@@ -5,6 +5,7 @@ express = require 'express'
 dust = require 'dustjs-linkedin'
 consolidate = require 'consolidate'
 redisStore = require('connect-redis')(express)
+passport = require 'passport'
 
 # Create app instance
 app = express()
@@ -39,6 +40,10 @@ app.use express.session(
     maxAge: 14 * 24 * 60 * 60 * 1000 # 14 days in ms
   secret: process.env.SESSION_SECRET or 'mySuperUnguessableSecret'
 )
+
+# Set up passport
+app.use passport.initialize()
+app.use passport.session()
 
 # Set the view engine
 app.engine 'dust', consolidate.dust
