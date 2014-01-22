@@ -10,14 +10,22 @@ passport.serializeUser User.serializeUser()
 passport.deserializeUser User.deserializeUser()
 
 module.exports =
-  login: (req, res) -> res.render 'user/login'
+  login: (req, res) ->
+    # Redirect to home page if authenticated already
+    return res.redirect '/' if req.isAuthenticated()
+
+    res.render 'user/login'
 
   authenticate: passport.authenticate('local',
                   successRedirect: '/'
                   failureRedirect: '/login'
                 )
 
-  signup: (req, res) -> res.render 'user/signup'
+  signup: (req, res) ->
+    # Log out if authenticated already
+    return res.redirect '/logout' if req.user?
+
+    res.render 'user/signup'
 
   create: (req, res) ->
     {username, password} = req.body
