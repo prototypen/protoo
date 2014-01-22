@@ -1,5 +1,9 @@
 {>layout/}
 
 {<content}
-  Landed \o/
+  {?username}
+    {username} has landed \o/
+  {:else}
+    Landed \o/
+  {/username}
 {/content}
