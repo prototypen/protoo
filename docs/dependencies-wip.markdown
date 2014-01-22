@@ -34,3 +34,6 @@ continuous testing integration service
 
 ## Bower
 Client Side Package Manager
+
+## Redis
+data structure server
