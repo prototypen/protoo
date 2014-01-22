@@ -1,0 +1,17 @@
+{
+  "name": "vendor",
+  "version": "0.0.0",
+  "private": true,
+  "directory": "public/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.0.3"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "protoo",
+  "version": "0.0.0",
+  "description": "A new Personal Publishing Platform that gives the user the most options to publish common types of media without being in the way.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prototypen/protoo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prototypen/protoo/issues"
+  },
+  "homepage": "https://github.com/prototypen/protoo",
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "express": "~3.4.8",
+    "connect-redis": "~1.4.6",
+    "consolidate": "~0.10.0",
+    "dustjs-linkedin": "~2.3.1"
+  }
+}
