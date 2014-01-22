@@ -6,6 +6,10 @@
 
 Install all the needed dependencies locally using ```npm install```.
 
+Install Bower Globally ```(sudo) npm install bower -g```
+
+Run Bower ```bower install``` to install foundation
+
 ## Run the server
 
 *Make sure you have mongoDB up and running. TODO: Automate soon.*
