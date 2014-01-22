@@ -3,7 +3,13 @@
 {<content}
   {?username}
     {username} has landed \o/
+    <br>
+    <a href="/logout" class="button">Logout</a>
   {:else}
     Landed \o/
+    <ul class="button-group">
+      <li><a href="/login" class="button">Login</a></li>
+      <li><a href="/signup" class="button">Signup</a></li>
+    </ul>
   {/username}
 {/content}
