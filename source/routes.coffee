@@ -10,3 +10,4 @@ module.exports = (app) ->
   app.post '/login', user.authenticate
   app.get '/signup', user.signup
   app.post '/signup', user.create
+  app.get '/logout', user.logout

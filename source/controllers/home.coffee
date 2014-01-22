@@ -2,4 +2,4 @@
 # url: /
 module.exports =
 
-  index: (req, res) -> res.render 'home'
+  index: (req, res) -> res.render 'home', username: req.user?.username

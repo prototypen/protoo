@@ -30,3 +30,7 @@ module.exports =
 
       # Error handling
       res.render('user/signup', account: account)
+
+  logout: (req, res) ->
+    req.session.destroy()
+    res.redirect '/'
