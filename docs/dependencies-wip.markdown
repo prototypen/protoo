@@ -1,39 +1,57 @@
-# Dependencies for protoo (work in progress)
+# Dependencies for protoo 
 
-## AngularJS
+### AngularJS
 Frontend Framework
 
-## Foundation JS
+### Foundation JS
 Responsive Framework
 
-## JQuery
+### JQuery
 Javascript Browser
 
-## MongoDB
+### MongoDB
 Database
 Express (later Koa)
 Server Framework
 
-## NoFlow
+### NoFlow
 Development Visualisation
 
-## Coffee Script
+### Coffee Script
 Javascript Abstraction
 
-## Passport & PassportLocal
+### Passport & PassportLocal
 Authentication
 
-## RequireJS 
+### RequireJS 
 Javascript file and module loader
 
-## Karma Runner
+### Karma Runner
 Testing Environment
 
-## Travis-Ci
+### Travis-Ci
 continuous testing integration service
 
-## Bower
+### Bower
 Client Side Package Manager
 
-## Redis
+### Redis
 data structure server
+
+---
+## For Review
+
+
+## WYSIWYG Editors
+
+### Sir Travor 
+http://madebymany.github.io/sir-trevor-js/example.html
+(Much more then just WYSIWYG - blocks and dragdrops and stuff)
+
+###  TextAngular
+http://textangular.com/ 
+(works with angularjs)
+
+### Raptor Editor
+https://www.raptor-editor.com/features
+(pretty and totally inline and small and customizable)
