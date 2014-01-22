@@ -42,4 +42,6 @@ node_modules/
 #travis
 .travis.yml
 
+# installed bower dependencies
+public/vendor
 
