@@ -1,4 +1,4 @@
-# Dependencies for protoo 
+# Dependencies for protoo
 
 ### AngularJS
 Frontend Framework
@@ -11,7 +11,8 @@ Javascript Browser
 
 ### MongoDB
 Database
-Express (later Koa)
+
+### Express (later Koa)
 Server Framework
 
 ### NoFlow
@@ -23,7 +24,7 @@ Javascript Abstraction
 ### Passport & PassportLocal
 Authentication
 
-### RequireJS 
+### RequireJS
 Javascript file and module loader
 
 ### Karma Runner
@@ -39,19 +40,16 @@ Client Side Package Manager
 data structure server
 
 ---
-## For Review
 
+# For Review
 
 ## WYSIWYG Editors
 
-### Sir Travor 
-http://madebymany.github.io/sir-trevor-js/example.html
-(Much more then just WYSIWYG - blocks and dragdrops and stuff)
+### [Sir Travor](http://madebymany.github.io/sir-trevor-js/example.html)
+Much more then just WYSIWYG - blocks and dragdrops and stuff
 
-###  TextAngular
-http://textangular.com/ 
-(works with angularjs)
+### [TextAngular](http://textangular.com/)
+works with angularjs
 
-### Raptor Editor
-https://www.raptor-editor.com/features
-(pretty and totally inline and small and customizable)
+### [Raptor Editor](https://www.raptor-editor.com/features)
+pretty and totally inline and small and customizable

@@ -24,7 +24,7 @@ app.use stylus.middleware(
 )
 
 # Serve files in public as statics
-app.use express.static './public'
+app.use express.static "#{process.cwd()}/public"
 
 # Set default title
 app.locals.title = 'Protoo'
