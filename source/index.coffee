@@ -6,6 +6,7 @@ dust = require 'dustjs-linkedin'
 consolidate = require 'consolidate'
 redisStore = require('connect-redis')(express)
 passport = require 'passport'
+stylus = require 'stylus'
 
 # Create app instance
 app = express()
@@ -15,6 +16,12 @@ app.port = process.env.PORT or 3000
 
 ## Setup Express Middleware to use
 # More info at: http://expressjs.com/api.html#middleware
+
+# Use stylus middleware for now
+app.use stylus.middleware(
+  src: "#{process.cwd()}/assets"
+  dest: "#{process.cwd()}/public"
+)
 
 # Serve files in public as statics
 app.use express.static './public'
