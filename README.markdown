@@ -37,7 +37,7 @@ Once basic functionality is working there will be a demonstration deployment of 
 
 We are currently at the beginning. There are lots of todos:
 
-1. basic user authentication with user models and connection with the database
+1. ~~basic user authentication with user models and connection with the database~~
 2. backbone, chaplin, require, jquery integration
 3. a proton with tags
 4. a basic text module 
