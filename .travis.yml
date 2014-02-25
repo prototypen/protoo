@@ -6,7 +6,7 @@ node_js:
 
 notifications:
   webhook:
-    secure: "aYeLKUqavQ5Ka9R8WcDde7zCAiVE5u08ogn8OcUr73ubEp6oxGM+aJkC2GhCb3VIl2xgznkQulR+HeaRPt0V85HZuNGXAbe0NQxbzi84wXix7tShMxQr+7KQl6G01RKE2FGWRxw4aNHGD174K0TAmRUOh18MomnodS9U+kx/fHk="
+    secure: "lfMDy/Nt+6kXcE15JrrMcLTwVN/oPED9BFad1DvhcHneUUVOPLk/9TlEiNw+QVl1j3V/W5Yta3bdD1qqx4JZkusBNp5IjcEHzH2qhbZQpK3yYK0lOElxjlNEmvJS0otWBw6xu2czwdh1MObOivH7FvlLHEwlzCtgq5f+4GNyQ+M="
 
 services:
   - mongodb
