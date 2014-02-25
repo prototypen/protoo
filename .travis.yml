@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "0.11"
+  - "0.10"
+
+notifications:
+  webhook:
+    secure: "SBN86viqlXPhXVVezAXx/HYScTJ8YSyE/UV/N2FX3dt1bL8wrdpZgAWTCTOGZvcO2MA3xdQxAcTV/eR3eVmG+ViUUdCMs5IH0kLKDDhX5pl8LpSTbjaBXQevXBKEgWR84CnprVmJNjro8sXJCi9ZcAcCc4OYIwL2ZVlgyy42Ask="
+
+services:
+  - mongodb
+  - redis

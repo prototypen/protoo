@@ -39,9 +39,6 @@ node_modules/
 # log files
 *.log
 
-#travis
-.travis.yml
-
 # installed bower dependencies
 public/vendor
 
